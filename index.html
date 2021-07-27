@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+]    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+</head>
+
+<body>
+    <h1 class="main">Let's get shit done!</h1>
+    
+    <div class="container">
+
+    <div class="all-lists">
+        <h1>My Lists</h1>
+        <ul class="lists" data-lists>
+
+        
+        </ul>
+        <form action="" class="flex" data-new-list-form >
+            <button class="btn-create" data-btn><strong>+</strong></button>
+            <input type="text" 
+            class="new list"
+             placeholder="List Name" 
+             data-new-list-input
+             aria-label="new list name">
+             </form>
+        </div>
+   
+
+
+    <div class="todo-task" data-todo-main>
+        <div data-head>
+            <div class="todo-head">
+               <h1 data-title></h1>
+               <p class='list-count' data-count></p>
+            </div>
+        </div>
+        
+        <div class="tasks" data-tasks>
+           <!-- Tasks -->
+        </div>
+       
+          
+        <form action="" class="flex" data-new-task-form>
+            <button class="create btn" aria-label="create new task" task-btn><strong>+</strong></button>
+            <input type="text" placeholder="Add task" data-new-task-input aria-label="new task name">
+        </form>
+
+        <div class="space"></div>
+
+        <div class="flex">
+            <button class="delete-btn" data-delete-list-btn>Delete task-list </button>  
+            <button class="delete-btn" data-delete-completed>Delete completed tasks </button>  
+        </div>
+     
+    </div>
+    </div>
+     
+    <!-- Template for Tasks to be inserted using js -->
+        <template id="task-template">
+            <div class="task">
+             <input type="checkbox">
+              <label>
+                <span class="custom-checkbox"></span>
+              </label>
+            </div>
+          </template>
+</body>
+
+</html>
